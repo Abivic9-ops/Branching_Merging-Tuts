@@ -336,14 +336,57 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Team Harmony</h4>
+          <p>Building exceptional digital experiences through collaboration, creativity, and technical excellence.</p>
+          <div class="footer-socials">
+            <a href="#" title="GitHub"><i class='bx bxl-github'></i></a>
+            <a href="#" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            <a href="#" title="Twitter"><i class='bx bxl-twitter'></i></a>
+            <a href="#" title="Instagram"><i class='bx bxl-instagram'></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#design">Design & UX</a></li>
+            <li><a href="#frontend">Frontend Development</a></li>
+            <li><a href="#backend">Backend Solutions</a></li>
+            <li><a href="#fullstack">Full Stack</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@teamharmony.dev">hello@teamharmony.dev</a></li>
+            <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+            <li>San Francisco, CA</li>
+          </ul>
+        </div>
+      </div>
       <div class="footer-bottom">
         <p>&copy; 2024 Team Harmony. All rights reserved.</p>
-        <p>Designed &amp; Built by our collective</p>
+        <p>Designed & Built by Team Harmony<i class='bx bx-star'></i> </p>
+        <button class="scroll-to-top" aria-label="Scroll to top">
+          <i class='bx bx-chevron-up'></i>
+        </button>
       </div>
     </div>
   </footer>
+
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var toggle = document.querySelector('.theme-toggle');
@@ -363,6 +406,13 @@
         localStorage.removeItem('theme');
       }
     });
+
+    var scrollBtn = document.querySelector('.scroll-to-top');
+    if (scrollBtn) {
+      scrollBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
   });
 </script>
 </body>
